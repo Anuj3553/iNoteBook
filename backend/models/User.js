@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose
-mongoose.connect('mongodb://0.0.0.0:27017/inotebook');
+require('dotenv').config()
+const mongoURI = process.env.MONGO_URL;
+mongoose.connect(mongoURI);
 
 const UserSchema = new Schema({
     name: {
