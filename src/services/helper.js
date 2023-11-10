@@ -1,1 +1,1 @@
-export const BASE_URL = "https://inotebookbackend-jqmb.onrender.com";
+export const BASE_URL = "https://inotebook-backend-mt82.onrender.com";
