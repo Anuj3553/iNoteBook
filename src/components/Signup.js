@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-const host = "https://inotebookbackend-jqmb.onrender.com";
+const host = "https://inotebook-backend-mt82.onrender.com";
 
 const Signup = (props) => {
   const [credentials, setCredentials] = useState({ name: "", email: "", password: "", cpassword: "" });

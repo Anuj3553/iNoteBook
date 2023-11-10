@@ -4,7 +4,12 @@ const connectToMongo = require('./db');
 connectToMongo();
 const app = express();
 const port = process.env.PORT || 5000;
-app.use(cors());
+app.use(
+  cors({
+    origin : "https://inotebookbackend-jqmb.onrender.com",
+    methods : ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 app.use(express.json());
 
 // Available Routes
