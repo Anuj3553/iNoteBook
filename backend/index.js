@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 app.use(
   cors({
-    origin : "https://inotebookbackend-jqmb.onrender.com",
+    origin : "https://inotebook-backend-mt82.onrender.com",
     methods : ["GET", "POST", "PUT", "DELETE"],
   })
 );
