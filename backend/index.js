@@ -3,7 +3,7 @@ const cors = require('cors');
 const connectToMongo = require('./db');
 connectToMongo();
 const app = express();
-const port = process.env.BASE_URL;
+const port = process.env.BASE_URL || 5000;
 app.use(cors());
 app.use(express.json());
 
