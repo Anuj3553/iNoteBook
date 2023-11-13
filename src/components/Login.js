@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-const host = "https://inotebook-backend-mt82.onrender.com";
+import { HOST_URL } from '../services/helper';
+const host = HOST_URL;
 const Login = (props) => {
     const [credentials, setCredentials] = useState({ email: "", password: "" });
     let navigate = useNavigate();

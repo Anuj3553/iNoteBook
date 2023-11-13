@@ -1,8 +1,9 @@
+import { HOST_URL } from "../../services/helper";
 import NoteContext from "./noteContext";
 import { useState } from "react";
 
 const NoteState = (props) => {
-    const host = "https://inotebook-backend-mt82.onrender.com";
+    const host = HOST_URL;
     const notesInitial = []
 
     const [notes, setNotes] = useState(notesInitial);

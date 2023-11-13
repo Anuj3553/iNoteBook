@@ -8,7 +8,9 @@ import NoteState from './context/notes/NoteState';
 import Alert from './components/Alert';
 import Login from './components/Login';
 import Signup from './components/Signup';
+// const cors = require("cors");
 
+// App.use(cors());
 function App() {
   const [alert, setAlert] = useState(null);
   const showAlert = (message, type) => {
